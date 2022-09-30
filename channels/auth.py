@@ -123,7 +123,7 @@ def logout(scope):
 
     if "session" not in scope:
         raise ValueError(
-            "Login cannot find session in scope. You should wrap your "
+            "Logout cannot find session in scope. You should wrap your "
             "consumer in SessionMiddleware."
         )
     session = scope["session"]
